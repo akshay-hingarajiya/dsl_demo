@@ -8,7 +8,9 @@ pipeline {
             }
         }
         
-        stage('build'){
+        stage('build'){environment {
+                HOME = '.'
+            }
             agent{
                 docker { 
                     image 'python:2' 
