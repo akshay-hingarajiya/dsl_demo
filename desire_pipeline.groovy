@@ -18,8 +18,8 @@ pipeline {
                 }    
             }
             steps{
-                sh "pip install -r $WORKSPACE/python/requirements.txt"
-                sh "python $WORKSPACE/python/main.py"
+                sh "pip install -r C:/Users/AK/.jenkins/workspace/python/requirements.txt"
+                sh "python C:/Users/AK/.jenkins/workspace/python/main.py"
             }
         }
             
