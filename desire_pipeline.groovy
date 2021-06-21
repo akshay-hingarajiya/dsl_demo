@@ -10,7 +10,8 @@ pipeline {
          stage('build')
         {
             steps{
-                    bat ' docker build -t ndemo2 .'   
+                    bat 'docker build -t python-demo .'
+                    bat 'docker run --name my-container -d -p 8080:8080 python-demo'
                     
             }
             
