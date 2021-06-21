@@ -14,6 +14,7 @@ pipeline {
                     bat 'docker run --name dsl -d -p 8181:8181 python-demo'
                     sleep(time:20,unit:"SECONDS") 
                     bat 'docker stop dsl'
+                    bat 'docker container rm dsl'
                     
             }
             
