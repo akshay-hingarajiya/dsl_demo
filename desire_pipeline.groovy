@@ -11,7 +11,8 @@ pipeline {
         {
             steps{
                     bat 'docker build -t python-demo .'
-                    bat 'docker run -d -p 8181:8181 python-demo'
+                    bat 'docker run --name dsl -d -p 8181:8181 python-demo'
+                 
                     
             }
             
