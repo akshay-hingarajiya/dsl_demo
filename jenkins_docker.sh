@@ -7,5 +7,5 @@ docker run \
 -p 8080:8080 \
 -p 50000:50000 \
 -v jenkins-data:/var/jenkins_home \
--v usr/local/bin/docker:/usr/bin/docker \
+-v tcp://127.0.0.1:2376:/var/run/docker.sock \
 jenkinsci/blueocea
