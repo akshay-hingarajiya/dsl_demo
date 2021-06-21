@@ -9,4 +9,5 @@ docker run \
 -v jenkins-data:/var/jenkins_home \
 -v /var/run/docker.sock:/var/run/docker.sock \
 -v $(which docker):/usr/bin/docker \
-jenkinsci/blueocea
+#jenkinsci/blueocea
+jenkins/jenkins:latest
