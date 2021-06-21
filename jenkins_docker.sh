@@ -2,7 +2,7 @@
 
 docker run \
 -u root \
---privileged
+--privileged \
 --rm \
 -d \
 -p 8080:8080 \
