@@ -18,8 +18,8 @@ pipeline {
                 }    
             }
             steps{
-                sh "pip install -r $(workspace)/python_dsl_job_example/python/requirements.txt"
-                sh "python $(workspace)/python_dsl_job_example/python/main.py"
+                sh "pip install -r $workspace/python_dsl_job_example/python/requirements.txt"
+                sh "python $workspace/python_dsl_job_example/python/main.py"
             }
         }
             
