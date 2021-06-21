@@ -7,8 +7,16 @@ pipeline {
                 git 'https://github.com/akshay-hingarajiya/dsl_demo.git'
             }
         }
+         stage('build')
+        {
+            steps{
+                    bat ' docker build -t ndemo2 .'   
+                    
+            }
+            
+        }
         
-        stage('build'){environment {
+  /*      stage('build'){environment {
                 HOME = '.'
             }
             agent{
@@ -21,7 +29,7 @@ pipeline {
                 sh "pip install -r $workspace/python_dsl_job_example/python/requirements.txt"
                 sh "python $workspace/python_dsl_job_example/python/main.py"
             }
-        }
+        }*/
             
     }
     post{
