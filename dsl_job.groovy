@@ -6,3 +6,8 @@ pipelineJob('python_dsl_job_example') {
         }
     }
 }
+job('example') {
+  steps {
+    batchFile('echo Hello World!')
+  }
+}
