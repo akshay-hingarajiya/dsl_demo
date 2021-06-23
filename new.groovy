@@ -1,4 +1,4 @@
-job(Demo) {
+job(new) {
  /*   logRotator {
       daysToKeep(-1)
       numToKeep(10)
