@@ -42,6 +42,6 @@ job(ciJobName) {
       chucknorris()
       archiveJunit("results/junit/**/*.xml")
       mailer(mailRecipients, true, true)
-    }/*
+    }*/
   }
 }
