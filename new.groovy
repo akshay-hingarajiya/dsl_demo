@@ -38,10 +38,10 @@ job(ciJobName) {
     }*/
 	 steps {
         batchFile('mvn install')
-   /* publishers {
-      chucknorris()
-      archiveJunit("results/junit/**/*.xml")
-      mailer(mailRecipients, true, true)
-    }*/
+   // publishers {
+     // chucknorris()
+     // archiveJunit("results/junit/**/*.xml")
+    //  mailer(mailRecipients, true, true)
+   // }
   }
 }
