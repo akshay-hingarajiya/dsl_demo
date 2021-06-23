@@ -1,4 +1,4 @@
-job(ciJobName) {
+job(Demo) {
  /*   logRotator {
       daysToKeep(-1)
       numToKeep(10)
