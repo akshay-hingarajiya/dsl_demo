@@ -28,7 +28,7 @@ job(ciJobName) {
     }
    /* wrappers {
       preBuildCleanup()
-    */}
+    }*/
   /*  steps {
       ant("build") {
         buildFile "build.xml"
