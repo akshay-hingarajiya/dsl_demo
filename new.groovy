@@ -15,7 +15,7 @@ job(ciJobName) {
     scm {
       git {
         remote {
-          url(https://github.com/robmazan/maven-nodejs-sample.git)
+          url('https://github.com/robmazan/maven-nodejs-sample.git')
       //    credentials(gitCredentials)
         }
         wipeOutWorkspace(true)
