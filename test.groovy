@@ -3,10 +3,10 @@
 //first we define a if else condition for which job is run.
 //after that we write a function for 
 
-def ispythonproject=true
+def num=10
 
     // create CI jobs
-    if(ispythonProject==true) {
+    if(num==10) {
       createCIJobforPython(python,github.com/akshay-hingarajiya/dsl_demo.git,master)   //function call for run python project
     }
     else if(isNodeProject){
