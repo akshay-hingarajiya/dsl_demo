@@ -20,7 +20,7 @@ def ispythonproject=true
 // this function def is for pyhon project 
 
 def createCIJobforPython(def ciJobName,def projectGitSshUrlToRepo,def defaultBranch) {
-Pintln "run python function"
+Println "run python function"
   pipelinejob(ciJobName) {
   
  
