@@ -14,13 +14,13 @@ def ispythonproject=true
       createDeployJob(node_demo,github.com/couchbaselabs/space-x-app.git,master)  //function call for run node project 
     }
     else {
-      println "No CI Jobs will be generated for ${gitProjectName}"
+      print "No CI Jobs will be generated for ${gitProjectName}"
     }
   
 // this function def is for pyhon project 
 
 def createCIJobforPython(def ciJobName,def projectGitSshUrlToRepo,def defaultBranch) {
-Println "run python function"
+print "run python function"
   pipelinejob(ciJobName) {
   
  
