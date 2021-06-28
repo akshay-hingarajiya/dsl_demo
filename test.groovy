@@ -4,6 +4,7 @@
 //after that we write a function for
 
 import javaposse.jobdsl.dsl.*
+import groovy.json.jsonSlurper
 
 def num=10
 
