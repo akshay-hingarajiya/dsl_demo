@@ -4,7 +4,6 @@
 //after that we write a function for
 package javaposse.jobdsl.plugin
 
-import hudson.plugins.git.GitSCM
 import org.jenkinsci.plugins.workflow.job.*
 import javaposse.jobdsl.dsl.jobs.MultibranchWorkflowJob
 import javaposse.jobdsl.dsl.DslFactory
@@ -39,7 +38,7 @@ def createCIJobforPython(def ciJobName,def projectGitUrlToRepo,def defaultBranch
     pipelineJob("${ciJobName}") {
         print"hello"
         
-    scm {
+   /* scm {
       git {
         remote {
             url("${projectGitUrlToRepo}")
@@ -49,7 +48,10 @@ def createCIJobforPython(def ciJobName,def projectGitUrlToRepo,def defaultBranch
         createTag(false)
           branch("${defaultBranch}")
       }
-    }
+    }*/
+        scm{
+            git("${projectGitUrlToRepo}")
+        }
     triggers {
       cron("H * * * 1-5")
     }
