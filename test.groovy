@@ -4,6 +4,9 @@
 //after that we write a function for
 package javaposse.jobdsl.plugin
 
+import javaposse.jobdsl.dsl.DslFactory
+import javaposse.jobdsl.dsl.Folder
+import javaposse.jobdsl.dsl.jobs.WorkflowJob
 import javaposse.jobdsl.dsl.DslScriptLoader
 import javaposse.jobdsl.plugin.JenkinsJobManagement
 import javaposse.jobdsl.dsl.ContextHelper
