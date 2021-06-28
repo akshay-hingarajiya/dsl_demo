@@ -75,7 +75,7 @@ def createCIJobforPython(def ciJobName,def projectGitUrlToRepo,def defaultBranch
 }
 */
 // this function def is for node project
-
+}
 def createDeployJob(deployJobName,projectGitSshUrlToRepo,defaultBranch) {
   job('deployJobName') {
     logRotator {
@@ -98,5 +98,5 @@ def createDeployJob(deployJobName,projectGitSshUrlToRepo,defaultBranch) {
       bat("mvn install")
     }
   }
-}
+
 
