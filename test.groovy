@@ -21,7 +21,7 @@ def num=10
 
 def createCIJobforPython(ciJobName,projectGitSshUrlToRepo,defaultBranch) {
 //echo "hello"
-  pipelinejob(ciJobName) {
+  pipelinejob('ciJobName') {
   
  
     scm {
@@ -52,8 +52,8 @@ def createCIJobforPython(ciJobName,projectGitSshUrlToRepo,defaultBranch) {
 
 // this function def is for node project
 
-def createDeployJob(def deployJobName,def projectGitSshUrlToRepo,def defaultBranch) {
-  job(deployJobName) {
+def createDeployJob(deployJobName,projectGitSshUrlToRepo,defaultBranch) {
+  job('deployJobName') {
     logRotator {
       daysToKeep(-1)
       numToKeep(10)
