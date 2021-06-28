@@ -23,7 +23,7 @@ def createCIJobforPython(def ciJobName,def projectGitUrlToRepo,def defaultBranch
 //echo "hello"
     pipelineJob("${ciJobName}") {
         print"hello"
-        echo "hello"
+        
     scm {
       git {
         remote {
