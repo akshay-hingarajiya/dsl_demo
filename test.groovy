@@ -1,7 +1,9 @@
 //this is a groovy script for jenkins job dsl.
 //in this script we define a job for two project,python and nodejs. 
 //first we define a if else condition for which job is run.
-//after that we write a function for 
+//after that we write a function for
+
+import javaposse.jobdsl.dsl.*
 
 def num=10
 
