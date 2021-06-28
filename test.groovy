@@ -21,7 +21,7 @@ def num=10
 
 def createCIJobforPython(ciJobName,projectGitSshUrlToRepo,defaultBranch) {
 //echo "hello"
-    pipelinejob('$ciJobName') {
+    pipelinejob('"${ciJobName}"') {
   
  
     scm {
