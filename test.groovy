@@ -27,7 +27,7 @@ def num=9
     }
     else if(num==9){
         // Pass params accordingly
-      createDeployJob('node_demo','github.com/couchbaselabs/space-x-app.git','master')  //function call for run node project 
+      createDeployJob('node_demo','github.com/akshay-hingarajiya/dsl_demo.git','master')  //function call for run node project 
     }
     else {
       print "No CI Jobs will be generated for ${gitProjectName}"
