@@ -38,7 +38,15 @@ def num=10
 def createCIJobforPython(def ciJobName,def projectGitUrlToRepo,def defaultBranch) {
 //echo "hello"
     pipelineJob("${ciJobName}") {
-      /*  print"hello"
+    definition {
+        cps {
+            script(readFileFromWorkspace('desire_pipeline.groovy'))
+            sandbox()
+        }
+    }
+}
+/*    pipelineJob("${ciJobName}") {
+        print"hello"
         
     scm {
       git {
