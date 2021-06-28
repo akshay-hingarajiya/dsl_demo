@@ -7,7 +7,7 @@ def num=10
 
     // create CI jobs
     if(num==10) {
-      createCIJobforPython(python,github.com/akshay-hingarajiya/dsl_demo.git,master)   //function call for run python project
+      createCIJobforPython(python_job,github.com/akshay-hingarajiya/dsl_demo.git,master)   //function call for run python project
     }
     else if(isNodeProject){
         // Pass params accordingly
