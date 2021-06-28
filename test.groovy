@@ -2,9 +2,13 @@
 //in this script we define a job for two project,python and nodejs. 
 //first we define a if else condition for which job is run.
 //after that we write a function for
+package javaposse.jobdsl.plugin
 
-import javaposse.jobdsl.dsl.*
-import groovy.json.jsonSlurper
+import javaposse.jobdsl.dsl.ContextHelper
+import javaposse.jobdsl.dsl.DslContext
+import javaposse.jobdsl.dsl.JobParent
+import javaposse.jobdsl.dsl.helpers.ConfigFilesContext
+import javaposse.jobdsl.plugin.structs.DescribableListContext
 
 def num=10
 
