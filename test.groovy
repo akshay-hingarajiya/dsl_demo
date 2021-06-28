@@ -19,7 +19,6 @@ import javaposse.jobdsl.dsl.JobParent
 import javaposse.jobdsl.dsl.helpers.ConfigFilesContext
 import javaposse.jobdsl.plugin.structs.DescribableListContext
 
-def num=10
 def num=9
 
     // create CI jobs
