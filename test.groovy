@@ -98,5 +98,5 @@ def createDeployJob(deployJobName,projectGitSshUrlToRepo,defaultBranch) {
       bat("mvn install")
     }
   }
-
+}
 
