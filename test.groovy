@@ -7,11 +7,11 @@ def num=10
 
     // create CI jobs
     if(num==10) {
-      createCIJobforPython(python_job,github.com/akshay-hingarajiya/dsl_demo.git,master)   //function call for run python project
+      createCIJobforPython('python_job','github.com/akshay-hingarajiya/dsl_demo.git','master')   //function call for run python project
     }
     else if(isNodeProject){
         // Pass params accordingly
-      createDeployJob(node_demo,github.com/couchbaselabs/space-x-app.git,master)  //function call for run node project 
+      createDeployJob('node_demo','github.com/couchbaselabs/space-x-app.git','master')  //function call for run node project 
     }
     else {
       print "No CI Jobs will be generated for ${gitProjectName}"
