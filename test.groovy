@@ -20,7 +20,8 @@ def num=10
 // this function def is for pyhon project 
 
 def createCIJobforPython(def ciJobName,def projectGitSshUrlToRepo,def defaultBranch) {
-echo "hello"
+//echo "hello"
+    print "hello"
   pipelinejob(ciJobName) {
   
  
