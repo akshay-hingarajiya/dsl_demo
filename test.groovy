@@ -19,20 +19,18 @@ def num=10
   
 // this function def is for pyhon project 
 
-def createCIJobforPython(def ciJobName,def projectGitSshUrlToRepo,def defaultBranch) {
+def createCIJobforPython(def ciJobName,def projectGitUrlToRepo,def defaultBranch) {
 //echo "hello"
     pipelineJob("${ciJobName}") {
-  
- 
     scm {
       git {
         remote {
-          url(projectGitSshUrlToRepo)
+            url("${projectGitUrlToRepo}")
    //       credentials(gitCredentials)
         }
         wipeOutWorkspace(true)
         createTag(false)
-        branch(defaultBranch)
+          branch("${defaultBranch}")
       }
     }
     triggers {
