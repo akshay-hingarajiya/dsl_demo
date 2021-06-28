@@ -19,9 +19,9 @@ def num=10
   
 // this function def is for pyhon project 
 
-def createCIJobforPython(ciJobName,projectGitSshUrlToRepo,defaultBranch) {
+def createCIJobforPython(def ciJobName,def projectGitSshUrlToRepo,def defaultBranch) {
 //echo "hello"
-    pipelinejob('ciJobName') {
+    pipelinejob("${ciJobName}") {
   
  
     scm {
