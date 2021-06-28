@@ -4,6 +4,7 @@
 //after that we write a function for
 package javaposse.jobdsl.plugin
 
+import javaposse.jobdsl.dsl.Job
 import groovy.transform.Field
 import org.jenkinsci.plugins.workflow.job.*
 import javaposse.jobdsl.dsl.jobs.MultibranchWorkflowJob
