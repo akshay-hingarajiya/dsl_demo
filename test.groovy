@@ -22,7 +22,16 @@ def num=10
 def createCIJobforPython(def ciJobName,def projectGitSshUrlToRepo,def defaultBranch) {
 //echo "hello"
     print "hello"
-  pipelinejob(ciJobName) {
+    pipelineJob('python_dsl_job_example') {
+    definition {
+        cps {
+            script(readFileFromWorkspace('desire_pipeline.groovy'))
+            sandbox()
+        }
+    }
+}
+}
+/*  pipelinejob(ciJobName) {
   
  
     scm {
@@ -76,3 +85,4 @@ def createDeployJob(def deployJobName,def projectGitSshUrlToRepo,def defaultBran
     }
   }
 }
+/*
