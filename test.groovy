@@ -20,12 +20,13 @@ import javaposse.jobdsl.dsl.helpers.ConfigFilesContext
 import javaposse.jobdsl.plugin.structs.DescribableListContext
 
 def num=10
+def num=9
 
     // create CI jobs
     if(num==10) {
       createCIJobforPython('python_job','github.com/akshay-hingarajiya/dsl_demo.git','master')   //function call for run python project
     }
-    else if(isNodeProject){
+    else if(num=9){
         // Pass params accordingly
       createDeployJob('node_demo','github.com/couchbaselabs/space-x-app.git','master')  //function call for run node project 
     }
@@ -76,27 +77,17 @@ def createCIJobforPython(def ciJobName,def projectGitUrlToRepo,def defaultBranch
 */
 // this function def is for node project
 }
-def createDeployJob(deployJobName,projectGitSshUrlToRepo,defaultBranch) {
-  job('deployJobName') {
-    logRotator {
-      daysToKeep(-1)
-      numToKeep(10)
-    }
-  //  label("ci-slave")
+def createDeployJob(deployJobName,projectGitUrlToRepo,defaultBranch) {
+  job("${deployJobName}") {
     scm {
-      git {
-        remote {
-          url(projectGitSshUrlToRepo)
-         // credentials(gitCredentials)
-        }
-        createTag(false)
-        branch(defaultBranch)
-       // relativeTargetDir(gitProjectName)
-      }
+        github("${projectGitUrlToRepo}", "${defaultBranch}")
+    }
+    triggers {
+        cron("H * * * 1-5")
     }
     steps {
-      bat("mvn install")
+        batchFile('echo Hello World!')
     }
-  }
+}
 }
 
