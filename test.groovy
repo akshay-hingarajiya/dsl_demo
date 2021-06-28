@@ -4,6 +4,7 @@
 //after that we write a function for
 package javaposse.jobdsl.plugin
 
+import org.jenkinsci.plugins.workflow.job.*
 import javaposse.jobdsl.dsl.jobs.MultibranchWorkflowJob
 import javaposse.jobdsl.dsl.DslFactory
 import javaposse.jobdsl.dsl.Folder
