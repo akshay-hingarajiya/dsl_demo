@@ -38,9 +38,9 @@ def num=10
 def createCIJobforPython(def ciJobName,def projectGitUrlToRepo,def defaultBranch) {
 //echo "hello"
     pipelineJob("${ciJobName}") {
-        print"hello"
+      /*  print"hello"
         
-   /* scm {
+    scm {
       git {
         remote {
             url("${projectGitUrlToRepo}")
@@ -50,10 +50,7 @@ def createCIJobforPython(def ciJobName,def projectGitUrlToRepo,def defaultBranch
         createTag(false)
           branch("${defaultBranch}")
       }
-    }*/
-        scm{
-            git("${projectGitUrlToRepo}")
-        }
+    }
     triggers {
       cron("H * * * 1-5")
     }
@@ -68,7 +65,7 @@ def createCIJobforPython(def ciJobName,def projectGitUrlToRepo,def defaultBranch
  
   }
 }
-
+*/
 // this function def is for node project
 
 def createDeployJob(deployJobName,projectGitSshUrlToRepo,defaultBranch) {
