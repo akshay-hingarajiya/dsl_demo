@@ -22,10 +22,10 @@ import javaposse.jobdsl.plugin.structs.DescribableListContext
 //def num=$Project
 
     // create CI jobs
-if("${Project}"==10) {
+if($Project==10) {
       createCIJobforPython('python_job','akshay-hingarajiya/dsl_demo','master')   //function call for run python project
     }
-    else if("${Project}"==9){
+    else if($Project==9){
         // Pass params accordingly
       createDeployJob('node_demo','jenkins-docs/simple-java-maven-app','master')  //function call for run node project 
     }
