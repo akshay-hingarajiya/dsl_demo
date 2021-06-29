@@ -23,11 +23,11 @@ def P="${Project}"
 print (P)
     // create CI jobs
 if(P=='10') {
-      createCIJobforPython('python_Project','akshay-hingarajiya/dsl_demo','master')   //function call for run python project
+      createCIJobforPython('python_project','akshay-hingarajiya/dsl_demo','master')   //function call for run python project
     }
 else if(num=='9'){
         // Pass params accordingly
-      createDeployJob('java_Project','jenkins-docs/simple-java-maven-app','master')  //function call for run node project 
+      createDeployJob('java_project','jenkins-docs/simple-java-maven-app','master')  //function call for run node project 
     }
  /*   else {
       print "No CI Jobs will be generated for "
