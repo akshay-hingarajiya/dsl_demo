@@ -19,7 +19,7 @@ import javaposse.jobdsl.dsl.JobParent
 import javaposse.jobdsl.dsl.helpers.ConfigFilesContext
 import javaposse.jobdsl.plugin.structs.DescribableListContext
 */
-String num="${Project}"
+def num="${Project}"
 print (num)
     // create CI jobs
 if((num)==10) {
