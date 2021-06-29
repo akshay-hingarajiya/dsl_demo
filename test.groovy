@@ -19,15 +19,15 @@ import javaposse.jobdsl.dsl.JobParent
 import javaposse.jobdsl.dsl.helpers.ConfigFilesContext
 import javaposse.jobdsl.plugin.structs.DescribableListContext
 */
-def num="${Project}"
-print (num)
+def P="${Project}"
+print (P)
     // create CI jobs
-if(num=='10') {
-      createCIJobforPython('python_job','akshay-hingarajiya/dsl_demo','master')   //function call for run python project
+if(P=='10') {
+      createCIJobforPython('python_Project','akshay-hingarajiya/dsl_demo','master')   //function call for run python project
     }
 else if(num=='9'){
         // Pass params accordingly
-      createDeployJob('node_demo','jenkins-docs/simple-java-maven-app','master')  //function call for run node project 
+      createDeployJob('java_Project','jenkins-docs/simple-java-maven-app','master')  //function call for run node project 
     }
  /*   else {
       print "No CI Jobs will be generated for "
