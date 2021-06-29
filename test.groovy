@@ -76,7 +76,7 @@ def createCIJobforPython(def ciJobName,def projectGitUrlToRepo,def defaultBranch
 */
 // this function def is for node project
 }
-def createDeployJob(deployJobName,projectGitUrlToRepo,defaultBranch) {
+def createDeployJob(def deployJobName,def projectGitUrlToRepo,def defaultBranch) {
   job("${deployJobName}") {
     scm {
         github("${projectGitUrlToRepo}", "${defaultBranch}")
