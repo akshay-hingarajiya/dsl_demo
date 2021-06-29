@@ -2,7 +2,7 @@
 //in this script we define a job for two project,python and nodejs. 
 //first we define a if else condition for which job is run.
 //after that we write a function for
-package javaposse.jobdsl.plugin
+/*package javaposse.jobdsl.plugin
 
 import javaposse.jobdsl.dsl.Job
 import groovy.transform.Field
@@ -18,8 +18,8 @@ import javaposse.jobdsl.dsl.DslContext
 import javaposse.jobdsl.dsl.JobParent
 import javaposse.jobdsl.dsl.helpers.ConfigFilesContext
 import javaposse.jobdsl.plugin.structs.DescribableListContext
-
-def num=9
+*/
+def num=10
 
     // create CI jobs
     if(num==10) {
