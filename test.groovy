@@ -19,8 +19,8 @@ import javaposse.jobdsl.dsl.JobParent
 import javaposse.jobdsl.dsl.helpers.ConfigFilesContext
 import javaposse.jobdsl.plugin.structs.DescribableListContext
 */
-//def num=$Project
-print "${Project}"
+def num="${Project}"
+print "num"
     // create CI jobs
 if("${Project}"==10) {
       createCIJobforPython('python_job','akshay-hingarajiya/dsl_demo','master')   //function call for run python project
