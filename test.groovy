@@ -30,7 +30,7 @@ def num="${Project}"
       createDeployJob('node_demo','jenkins-docs/simple-java-maven-app','master')  //function call for run node project 
     }
     else {
-      print "No CI Jobs will be generated for ${gitProjectName}"
+      print "No CI Jobs will be generated for "
     }
   
 // this function def is for pyhon project 
