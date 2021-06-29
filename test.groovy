@@ -20,7 +20,7 @@ import javaposse.jobdsl.dsl.helpers.ConfigFilesContext
 import javaposse.jobdsl.plugin.structs.DescribableListContext
 */
 String num="${Project}"
-print "num"
+print "(num)"
     // create CI jobs
 if("${Project}"==10) {
       createCIJobforPython('python_job','akshay-hingarajiya/dsl_demo','master')   //function call for run python project
