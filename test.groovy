@@ -2,7 +2,6 @@
 //in this script we define a job for two project,python and nodejs. 
 //first we define a if else condition for which job is run.
 //after that we write a function for
-
 def Project="${Project}"
 print (Project)
     // create if else condition 
@@ -10,7 +9,6 @@ if(Project=='python_project') {
       createCIJobforPython('python_project','akshay-hingarajiya/dsl_demo','master')   //function call for run python project
     }
 else if(Project=='java_project'){
-        // Pass params accordingly
       createDeployJob('java_project','jenkins-docs/simple-java-maven-app','master')  //function call for run node project 
     }
     else {
